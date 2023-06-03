@@ -1,8 +1,9 @@
-![fraud](https://user-images.githubusercontent.com/44379044/131612132-7b78ceaa-09f9-4eef-b86a-b3979fae2909.png)
-
 # **Credit Risk Analysis**
 
-## **1 - Business Understanding**
+## **1 - Introduction**
+This is a data science portfolio project focused on credit risk analysis. The objective is to emphasize the critical importance of credit risk analysis in the financial industry and showcase my skills in data analysis and machine learning by developing a model that predicts credit risk for financial institutions.
+
+Credit risk analysis is of paramount importance for financial institutions as it allows them to assess the probability of borrowers defaulting on their loan obligations. By accurately predicting credit risk, these institutions can make informed decisions regarding lending, determine appropriate interest rates, and maintain a balanced loan portfolio. Effective credit risk analysis not only minimizes financial losses but also contributes to the stability of the financial system as a whole.
 
 ## **2 - Solution Strategy**
 A data science project was developed to build, evaluate and launch a machine learning model capable of classifying transactions as fraudulent or legitimate. The project consists of the following steps:
