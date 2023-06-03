@@ -41,8 +41,8 @@ A report with all relevant information obtained during the project was written. 
 
 **Table 2.** Results regarding the evaluation metrics for all the classification models.
 
-| Balanced Accuracy	| Precision	| Recall	| F1	| Kappa	| AUC |
-|:---------:|:-----------------:|:-----------:|:-----------:|:-----------:|:--------------:|
+| Model | Balanced Accuracy	| Precision	| Recall	| F1	| Kappa	| AUC |
+|:---------:|:-----------------:|:-----------:|:-----------:|:-----------:|:--------------:|:--------------:|
 |LR |	0.576 +/- 0.002 |	0.743 +/- 0.014 |	0.168 +/- 0.005 |	0.274 +/- 0.006	| 0.211 +/- 0.005 |	0.758 +/- 0.004 |
 |MLP | 0.63 +/- 0.08 | 0.724 +/- 0.188	| 0.328 +/- 0.229	| 0.365 +/- 0.174	| 0.282 +/- 0.13	| 0.774 +/- 0.019 |
 |LR scaled	| 0.726 +/- 0.006	| 0.74 +/- 0.023	| 0.5 +/- 0.008	| 0.597 +/- 0.013	| 0.511 +/- 0.016	| 0.865 +/- 0.006 |
