@@ -1,5 +1,5 @@
 # **Credit Risk Analysis**
-
+Under construction. Not finished.
 ## **1 - Introduction**
 This is a data science portfolio project focused on credit risk analysis. The objective is to emphasize the critical importance of credit risk analysis in the financial industry and showcase my skills in data analysis and machine learning by developing a model that predicts credit risk for financial institutions.
 
