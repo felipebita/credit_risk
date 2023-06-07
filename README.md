@@ -6,7 +6,7 @@ This is a data science portfolio project focused on credit risk analysis. The ob
 Credit risk analysis is of paramount importance for financial institutions as it allows them to assess the probability of borrowers defaulting on their loan obligations. By accurately predicting credit risk, these institutions can make informed decisions regarding lending, determine appropriate interest rates, and maintain a balanced loan portfolio. Effective credit risk analysis not only minimizes financial losses but also contributes to the stability of the financial system as a whole.
 
 ## **2 - Solution Strategy**
-A data science project was developed to build, evaluate and launch a machine learning model capable of classifying transactions as fraudulent or legitimate. The project consists of the following steps:
+A data science project was developed to build, evaluate and launch a machine learning model capable of predicting loans default probabilities. The project consists of the following steps:
 
 **2.1 - Data Analysis and Preparation**
 
@@ -14,7 +14,7 @@ In this step the data was analyzed in terms of structure, features information, 
 
 **2.2 - Machine Learning Modeling**
 
-For this project, seven ML models for classification: Naive Bayes (NB), Logistic Regression (LR), K-Nearest Neighbors (KNN), Suport Vector Machine (SVM), Random Forest (RF), Multilayer perceptron (MLP), Light Gradient Boosting Machine (LGBM) and XGBoost (XGB); were evaluted considering four metrics: Balanced Accuracy, Precision, Recall, F1 and Kappa; in a 5-fold cross validation strategy. Scalled and not scalled data were tested and hyperparameter tunning was done for the best model.
+For this project, seven ML models for classification: Logistic Regression (LR), Random Forest (RF), Light Gradient Boosting Machine (LGBM), XGBoost (XGB) Multilayer perceptron (MLP); were evaluted considering four metrics: Balanced Accuracy, Precision, Recall, F1, Kappa and AUC; in a 5-fold cross validation strategy. Scalled and not scalled data were tested and hyperparameter tunning was done for the best model.
   
 **2.3 - Company Expansion Strategy**
 
@@ -58,26 +58,5 @@ A report with all relevant information obtained during the project was written. 
 ## **5 - Company Credit Strategy**
 
 ## **6 - Report Results**
-**6.1 What is the model's Precision and Accuracy?**
-
-* The 5-fold cross-validation of the model showed a balanced accuracy of **0.865 +/- 0.013** and a precision of **0.961 +/- 0.021**.
-
-**6.2 How Reliable is the model in classifying transactions as legitimate or fraudulent?**
-
-* The model showed a F1 score of **0.829 +/- 0.017**
-
-**6.3 What is the Expected Billing by the Company if we classify 100% of transactions with the model?**
-
-* Using the model the company can revenue **$63.615.970**.
-
-**6.4 What is the Loss Expected by the Company in case of model failure?**
-
-* The company would return **$6.355.497** for the miss detection of fraud transactions.
-
-**6.5 What is the Profit Expected by the Blocker Fraud Company when using the model?**
-
-* Using the model the company can revenue **$57.260.473**.
 
 ## **7 - Conclusions and Prospects**
-
-The final model obtained in this project had a really good performance, which makes the company business profitable. The prospects for the service would be increase the trainig data set and evaluate different classification models such as neural network, aiming to enhance the performance of the service.    
