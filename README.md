@@ -26,7 +26,7 @@ The one time model was saved and deployed. A small dataset was used to test the 
   
 **2.5 - Report Writing**
 
-A report with all relevant information obtained during the project was written. And the notebook with all the code was made [available](https://github.com/felipebita/fraud_detection/blob/main/notebook/fraud_project.ipynb).
+A report with all relevant information obtained during the project was written. And the notebook with all the code was made [available](https://github.com/felipebita/credit_risk/blob/main/notebook/credit_risk_modeling.ipynb).
   
 ## **3 - Data Analysis Report**
 
@@ -37,6 +37,21 @@ A report with all relevant information obtained during the project was written. 
 |std |	6.18 |	51547.5 |	4 |	6327.8 |	3.2 |	0.11	| 4 |
 |min |	20 |	4000 |	0 |	500 |	5.4 |	0	 | 2 | 
 |max |	84 |	2039784 |	41 |	35000	| 23.2	| 0.83	| 30 |
+
+![image](https://github.com/felipebita/credit_risk/assets/44379044/f7357621-eea1-40ac-b102-1499c513e758)
+**Figure 1. Distribution plots of the continuous variables.**
+
+![image](https://github.com/felipebita/credit_risk/assets/44379044/21515b7b-dc9d-4c58-8547-0ac064c7a629)
+**Figure 2. Correlation matrix of the continuous variables.**
+
+![image](https://github.com/felipebita/credit_risk/assets/44379044/c4ae3fb2-7862-4331-8332-4024e4a09fa3)
+
+![image](https://github.com/felipebita/credit_risk/assets/44379044/c5763134-4f80-4f77-97e1-169815258ecf)
+
+![image](https://github.com/felipebita/credit_risk/assets/44379044/792705c5-8cd9-4c80-8891-518c12830bd3)
+
+![image](https://github.com/felipebita/credit_risk/assets/44379044/f5befc6c-3576-4599-b01d-baa5d69b987c)
+
 
 ## **4 - Machine Learning Modeling Results**
 
@@ -55,8 +70,25 @@ A report with all relevant information obtained during the project was written. 
 |XGB scaled |	0.865 +/- 0.004	| 0.956 +/- 0.008	| 0.738 +/- 0.01	| 0.833 +/- 0.005	| 0.794 +/- 0.006	| 0.951 +/- 0.003 |
 |**XGB** |**0.865 +/- 0.004** | **0.956 +/- 0.008**	| **0.738 +/- 0.01**	| **0.833 +/- 0.005**	| **0.794 +/- 0.006**	| **0.951 +/- 0.003** |
 
+![image](https://github.com/felipebita/credit_risk/assets/44379044/06aa523a-a760-4f75-bef3-cee0334c7968)
+
+**Table 3.** Results regarding the evaluation metrics for the calibrated XGB models.
+| Model | Balanced Accuracy	| Precision	| Recall	| F1	| Kappa | AUC |
+|:---------:	| :---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| XGB	|0.866407	|0.958290	|0.741727	|0.836215	|0.798099	|0.952598|
+|XGB + sigmoid	|0.870581	|0.981441	|0.751412	|0.840253	|0.802595	|0.955023|
+|XGB + isotonic	|0.860899	|0.981441	|0.725585	|0.834339	|0.797004	|0.955003|
+
 ## **5 - Company Credit Strategy**
+|Acceptance Rate	| Threshold	|Bad Rate	|Loans Accepted	|Average Loan Amount	|Portifolio Value |
+|:---------: |:---------:	|:---------:	|:---------:	|:---------:	|:---------: |
+|	1.00	|1.00 |	0.21634	| 5727 |	9704 |	31528296|
+|	0.95	|0.99736 |	0.17500 |	5440	| 9704	| 34313344|
+|	0.90	|0.99012 |  0.12922	| 5154	| 9704	| 37088688|
+|	0.85	|0.86606 |	0.07868	| 4868	| 9704	| 39805808|
+|	0.80	|0.30247 |	0.05479	| 4581	| 9704	| 39582616|
+|	0.75	|0.18514 |	0.04284	| 4295	| 9704	| 38107608|
+|	0.70	|0.13062 |	0.03642	| 4009	| 9704	| 36069768|
+|	0.65	|0.09661 |	0.02875	| 3722	| 9704	| 34041632|
 
-## **6 - Report Results**
-
-## **7 - Conclusions and Prospects**
+## **6 - Conclusions and Prospects**
