@@ -14,21 +14,22 @@ In this step the data was analyzed in terms of structure, features information, 
 
 **2.2 - Machine Learning Modeling**
 
-For this project, seven ML models for classification: Logistic Regression (LR), Random Forest (RF), Light Gradient Boosting Machine (LGBM), XGBoost (XGB) Multilayer perceptron (MLP); were evaluted considering four metrics: Balanced Accuracy, Precision, Recall, F1, Kappa and AUC; in a 5-fold cross validation strategy. Scalled and not scalled data were tested and hyperparameter tunning was done for the best model.
+For this project, five ML models for classification: Logistic Regression (LR), Random Forest (RF), Light Gradient Boosting Machine (LGBM) and XGBoost (XGB); were evaluted considering four metrics: Balanced Accuracy, Precision, Recall, F1, Kappa and AUC; in a 5-fold cross validation strategy. Scalled and not scalled data were tested and calibration was done for the best model.
   
-**2.3 - Company Expansion Strategy**
+**2.3 - Company Business Strategy**
 
-With the best model selected, a one time modeling was done and the results used to calculate the prospects of the company strategy using the model. Then, the questions of "The Challenge" were answered.
+After selecting the best model, a business strategy was developed considering different acceptance rates of credit, where portfolio value was estimated and expected loss minimized.
   
 **2.4 - Model Deploy**
 
-The one time model was saved and deployed. A small dataset was used to test the API and the model.
+The best model was saved and deployed. A small dataset was used to test the API and the model.
   
 **2.5 - Report Writing**
 
-A report with all relevant information obtained during the project was written. And the notebook with all the code was made [available](https://github.com/felipebita/credit_risk/blob/main/notebook/credit_risk_modeling.ipynb).
+A report with all relevant information obtained during the project was written. And the notebook with all the code and complamentary analysis was made [available](https://github.com/felipebita/credit_risk/blob/main/notebook/credit_risk_modeling.ipynb).
   
 ## **3 - Data Analysis Report**
+The dataset used in this project was composed of 32580 lending records, with seven features about the borrower. After removing records with NAs and outlier values, 28632 records were left. As summarized in Table 1, the mean age of the borrowers was 28 years, and the mean loan was 9650$ with a mean interest rate of 11%. In this dataset, 21.7% of the borrowers defaulted their loans. 
 
 **Table 1.** Descriptive statistics of the continuous variables.
 | |person_age	| person_income	| person_emp_length	| loan_amnt	| loan_int_rate	| loan_percent_income	| cb_person_cred_hist_length |
@@ -39,9 +40,11 @@ A report with all relevant information obtained during the project was written. 
 |max |	84 |	2039784 |	41 |	35000	| 23.2	| 0.83	| 30 |
 
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/f7357621-eea1-40ac-b102-1499c513e758)
+
 **Figure 1. Distribution plots of the continuous variables.**
 
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/21515b7b-dc9d-4c58-8547-0ac064c7a629)
+
 **Figure 2. Correlation matrix of the continuous variables.**
 
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/c4ae3fb2-7862-4331-8332-4024e4a09fa3)
