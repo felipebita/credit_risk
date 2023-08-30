@@ -41,20 +41,23 @@ The dataset used in this project was composed of 32580 lending records, with sev
 
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/f7357621-eea1-40ac-b102-1499c513e758)
 
-**Figure 1. Distribution plots of the continuous variables.**
+**Figure 1.** Distribution plots of the continuous variables.
 
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/21515b7b-dc9d-4c58-8547-0ac064c7a629)
 
-**Figure 2. Correlation matrix of the continuous variables.**
-
-![image](https://github.com/felipebita/credit_risk/assets/44379044/c4ae3fb2-7862-4331-8332-4024e4a09fa3)
+**Figure 2.** Correlation matrix of the continuous variables.
 
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/c5763134-4f80-4f77-97e1-169815258ecf)
 
+**Figure 3.**  Bar plot showing the proportion of each type of home ownership in the default and not default loans.
+
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/792705c5-8cd9-4c80-8891-518c12830bd3)
+
+**Figure 4.**  Bar plot showing the proportion of each loan intent in the default and not default loans.
 
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/f5befc6c-3576-4599-b01d-baa5d69b987c)
 
+**Figure 5.**  Bar plot showing the proportion of previous defaults in loan record in the actual default and not default loans.
 
 ## **4 - Machine Learning Modeling Results**
 
@@ -74,6 +77,8 @@ The dataset used in this project was composed of 32580 lending records, with sev
 |**XGB** |**0.865 +/- 0.004** | **0.956 +/- 0.008**	| **0.738 +/- 0.01**	| **0.833 +/- 0.005**	| **0.794 +/- 0.006**	| **0.951 +/- 0.003** |
 
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/06aa523a-a760-4f75-bef3-cee0334c7968)
+
+**Figure 6.**  Calibration plots for the XGB model considering sigmoid and isotonic regressors.
 
 **Table 3.** Results regarding the evaluation metrics for the calibrated XGB models.
 | Model | Balanced Accuracy	| Precision	| Recall	| F1	| Kappa | AUC |
