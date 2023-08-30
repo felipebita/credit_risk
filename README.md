@@ -29,7 +29,7 @@ The best model was saved and deployed. A small dataset was used to test the API 
 A report with all relevant information obtained during the project was written. And the notebook with all the code and complamentary analysis was made [available](https://github.com/felipebita/credit_risk/blob/main/notebook/credit_risk_modeling.ipynb).
   
 ## **3 - Data Analysis Report**
-The dataset used in this project was composed of 32580 lending records, with seven features about the borrower. After removing records with NAs and outlier values, 28632 records were left. As summarized in Table 1, the mean age of the borrowers was 28 years, and the mean loan was 9650$ with a mean interest rate of 11%. In this dataset, 21.7% of the borrowers defaulted their loans. 
+The dataset used in this project was composed of 32580 lending records, with seven features about the borrower. After removing records with NAs and not realistic values of person age and employment length, 28632 records were left. As summarized in **Table 1**, the mean age of the borrowers was 28 years, and the mean loan was 9650$ with a mean interest rate of 11%, the variable person income was the only with extreme higher values in relation to rest of the data **(Figure 1)**. The correlation analysis showed that in general the variables do not have high correlations, except person age with person credit historic length (0.88) and loan amount and loan percent income (0.58). In relation to the variable of interest (loan status), the highest correlations were with loan percent income (0.38) and loan interest rate (0.34) **(Figure 2)**.
 
 **Table 1.** Descriptive statistics of the continuous variables.
 | |person_age	| person_income	| person_emp_length	| loan_amnt	| loan_int_rate	| loan_percent_income	| cb_person_cred_hist_length |
@@ -47,17 +47,19 @@ The dataset used in this project was composed of 32580 lending records, with sev
 
 **Figure 2.** Correlation matrix of the continuous variables.
 
-![image](https://github.com/felipebita/credit_risk/assets/44379044/c5763134-4f80-4f77-97e1-169815258ecf)
+In this dataset, 21.7% of the borrowers defaulted their loans.
 
-**Figure 3.**  Bar plot showing the proportion of each type of home ownership in the default and not default loans.
+![figure3](https://github.com/felipebita/credit_risk/assets/44379044/787b6159-18e2-495f-a985-fa121874b456)
 
-![image](https://github.com/felipebita/credit_risk/assets/44379044/792705c5-8cd9-4c80-8891-518c12830bd3)
+**Figure 3.**  Bar plots showing the proportion of each type of home ownership. A) General proportion. B) Proportion in the default and not default loans.
 
-**Figure 4.**  Bar plot showing the proportion of each loan intent in the default and not default loans.
+![figure4](https://github.com/felipebita/credit_risk/assets/44379044/e0d1efbf-446b-49aa-9b01-ff28778d9eb5)
 
-![image](https://github.com/felipebita/credit_risk/assets/44379044/f5befc6c-3576-4599-b01d-baa5d69b987c)
+**Figure 4.**  Bar plot showing the proportion of each loan intent. A) General proportion. B) Proportion in the default and not default loans.
 
-**Figure 5.**  Bar plot showing the proportion of previous defaults in loan record in the actual default and not default loans.
+![figure5](https://github.com/felipebita/credit_risk/assets/44379044/8c6e0cb5-c097-44e6-b77c-7f8fb0a654b8)
+
+**Figure 5.**  Bar plot showing the proportion of previous defaults in loan record. A) General proportion. B) Proportion in the default and not default loans.
 
 ## **4 - Machine Learning Modeling Results**
 
