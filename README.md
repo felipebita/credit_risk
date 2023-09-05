@@ -47,7 +47,7 @@ The dataset used in this project was composed of 32580 lending records, with sev
 
 **Figure 2.** Correlation matrix of the continuous variables.
 
-Considering the discrete variables, it was observed that about 10% of the borrowers have ownership of their house, while around 50% pay rent and the rest have the house mortgaged, considering the loan status, it was observed that almost 75% of the loans default are from borrowers who pay rent **(Figure 3)**.
+Considering the discrete variables, it was observed that about 10% of the borrowers have ownership of their house, while around 50% pay rent and the rest have the house mortgaged, considering the loan status, it was observed that almost 97% of the loans default are from borrowers who pay rent or have the house mortgaged, where 75% is from rent **(Figure 3)**. For the loan intent variable, the classes had similar percentage values, ranging from 11% for home improvemente to 20% for education. Furthermore, when comparing not default and default, it was seen a significant increase in the classes debt consolidation (14% to 21%) and medical (17% to 23%) **(Figure 4)**. Lastly, the variable showing the borrowers file (previous loan default) showed that most of the borrowers did not have defaults in their file (80%) and considering not default and default, the percentage of default in the file increased from 16% to 30% **(Figure 5)**. Those results shows that there is a higher risk of default in loans made by people who live on rent or have the house mortgaged, that borrowed with the intent of debt consolidation or medical use, and have defaults in their default file. 
 
 ![figure3](https://github.com/felipebita/credit_risk/assets/44379044/787b6159-18e2-495f-a985-fa121874b456)
 
