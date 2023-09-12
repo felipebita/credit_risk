@@ -63,7 +63,14 @@ Continuing, the variable borrowers file (previous loan default) showed that most
 
 **Figure 5.**  Bar plot showing the proportion of previous defaults in loan record. A) General proportion. B) Proportion in the default and not default loans.
 
+![figure6](https://github.com/felipebita/credit_risk/assets/44379044/32b17c22-585d-4b57-961e-2282f9db4685)
+
+**Figure 6.** Bar plot showing the proportion of loan grade in loan record. A) General proportion. B) Proportion in the default and not default loans.
+
+
 ## **4 - Machine Learning Modeling Results**
+
+In the machine learning modeling step, the best evaluated model was XGB and no difference was observed in relation to scalled and not scalled data **(Table 2)**. Following with the XGB model, two calibration methods were evaluated and a better result was obtained with the sigmoid calibration, which reduced the presence of false negatives in the results. **(Table 3) (Figure 7)**. 
 
 **Table 2.** Results regarding the evaluation metrics for all the classification models.
 
@@ -80,16 +87,16 @@ Continuing, the variable borrowers file (previous loan default) showed that most
 |XGB scaled |	0.865 +/- 0.004	| 0.956 +/- 0.008	| 0.738 +/- 0.01	| 0.833 +/- 0.005	| 0.794 +/- 0.006	| 0.951 +/- 0.003 |
 |**XGB** |**0.865 +/- 0.004** | **0.956 +/- 0.008**	| **0.738 +/- 0.01**	| **0.833 +/- 0.005**	| **0.794 +/- 0.006**	| **0.951 +/- 0.003** |
 
-![image](https://github.com/felipebita/credit_risk/assets/44379044/06aa523a-a760-4f75-bef3-cee0334c7968)
-
-**Figure 6.**  Calibration plots for the XGB model considering sigmoid and isotonic regressors.
-
 **Table 3.** Results regarding the evaluation metrics for the calibrated XGB models.
 | Model | Balanced Accuracy	| Precision	| Recall	| F1	| Kappa | AUC |
 |:---------:	| :---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 | XGB	|0.866407	|0.958290	|0.741727	|0.836215	|0.798099	|0.952598|
-|XGB + sigmoid	|0.870581	|0.981441	|0.751412	|0.840253	|0.802595	|0.955023|
+|**XGB + sigmoid**	|**0.870581**	|**0.981441**	|**0.751412**	|**0.840253**	|**0.802595**	|**0.955023**|
 |XGB + isotonic	|0.860899	|0.981441	|0.725585	|0.834339	|0.797004	|0.955003|
+
+![image](https://github.com/felipebita/credit_risk/assets/44379044/06aa523a-a760-4f75-bef3-cee0334c7968)
+
+**Figure 7.**  Calibration plots for the XGB model considering sigmoid and isotonic regressors.
 
 ## **5 - Company Credit Strategy**
 |Acceptance Rate	| Threshold	|Bad Rate	|Loans Accepted	|Average Loan Amount	|Portifolio Value |
