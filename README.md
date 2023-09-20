@@ -70,7 +70,7 @@ Continuing, the variable borrowers file (previous loan default) showed that most
 
 ## **4 - Machine Learning Modeling Results**
 
-In the machine learning modeling step, the best evaluated model was XGB and no difference was observed in relation to scalled and not scalled data **(Table 2)**. Following with the XGB model, two calibration methods were evaluated and a better result was obtained with the sigmoid calibration, which reduced the presence of false negatives in the results. **(Table 3) (Figure 7)**. 
+In the machine learning modeling step, the best evaluated model was XGB and no difference was observed in relation to scalled and not scalled data **(Table 2)**. Following with the XGB model, the isotonic and sigmoid calibration methods were evaluated. Eventhough the calibration methods provided better results for Precision and F1, in this specific case, once the objective is to avoid the maximum of defaults, the Recall is the most important metric. This way, the not calibrated XGB model showed the best performance. **(Table 3) (Figure 7)**. 
 
 **Table 2.** Results regarding the evaluation metrics for all the classification models.
 
@@ -93,7 +93,20 @@ In the machine learning modeling step, the best evaluated model was XGB and no d
 |:---------:	| :---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |isotonic	| 0.854 +/- 0.007	| 0.994 +/- 0.003	| 0.71 +/- 0.014	| 0.828 +/- 0.009	| 0.79 +/- 0.01	| 0.952 +/- 0.003 |
 |sigmoid	| 0.863 +/- 0.005	| 0.97 +/- 0.004	| 0.733 +/- 0.012	| 0.835 +/- 0.006	| 0.797 +/- 0.007	| 0.952 +/- 0.002 |
-|**xgb**	| 0.865 +/- 0.004	| 0.955 +/- 0.008	| **0.74 +/- 0.01**	|0.834 +/- 0.004	| 0.795 +/- 0.005	| 0.952 +/- 0.003 |
+|**XGB**	| **0.865 +/- 0.004**	| **0.955 +/- 0.008**	| **0.74 +/- 0.01**	| **0.834 +/- 0.004**	| **0.795 +/- 0.005**	| **0.952 +/- 0.003** |
+
+After deciding the best modeling technique, 80% of the data was separated to train the final model which was deployed. The evaluation of the final model was done using the remained 20% of the data. The model showed metrics very similar to the results obtained in the cross-validation (
+
+**Table 4.** Results regarding the evaluation metrics for the model selected to be deployed
+| Model | Balanced Accuracy	| Precision	| Recall	| F1	| Kappa | AUC |
+|:---------:	| :---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|**XGB**	| 0.865	| 0.96	| 0.74 |0.836 | 0.797	| 0.95 |
+
+![image](https://github.com/felipebita/credit_risk/assets/44379044/706e75d5-bca8-4889-b909-b7704de8134f)
+
+**Figure 7.** Confusion matrix of the model selected to be deployed.
+
+
 
 
 ## **5 - Company Credit Strategy**
