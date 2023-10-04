@@ -95,7 +95,7 @@ In the machine learning modeling step, the best evaluated model was XGB and no d
 |sigmoid	| 0.863 +/- 0.005	| 0.97 +/- 0.004	| 0.733 +/- 0.012	| 0.835 +/- 0.006	| 0.797 +/- 0.007	| 0.952 +/- 0.002 |
 |**XGB**	| **0.865 +/- 0.004**	| **0.955 +/- 0.008**	| **0.74 +/- 0.01**	| **0.834 +/- 0.004**	| **0.795 +/- 0.005**	| **0.952 +/- 0.003** |
 
-After deciding the best modeling technique, 80% of the data was separated to train the final model which was deployed. The evaluation of the final model was done using the remained 20% of the data. The model showed metrics very similar to the results obtained in the cross-validation (
+After deciding the best modeling technique, 80% of the data was separated to train the final model which was deployed. The evaluation of the final model was done using the remained 20% of the data. The model showed metrics very similar to the results obtained in the cross-validation **(Table 3, Table 4)**, as shown in the confusion matrix **(Figure 7)**, for a set of 5727 samples, it was obtained 331 false negatives and 39 false positives.
 
 **Table 4.** Results regarding the evaluation metrics for the model selected to be deployed
 | Model | Balanced Accuracy	| Precision	| Recall	| F1	| Kappa | AUC |
@@ -105,9 +105,6 @@ After deciding the best modeling technique, 80% of the data was separated to tra
 ![image](https://github.com/felipebita/credit_risk/assets/44379044/706e75d5-bca8-4889-b909-b7704de8134f)
 
 **Figure 7.** Confusion matrix of the model selected to be deployed.
-
-
-
 
 ## **5 - Company Credit Strategy**
 |Acceptance Rate	| Threshold	|Bad Rate	|Loans Accepted	|Average Loan Amount	|Portifolio Value |
