@@ -95,27 +95,30 @@ In the machine learning modeling step, the best evaluated model was XGB and no d
 |sigmoid	| 0.863 +/- 0.005	| 0.97 +/- 0.004	| 0.733 +/- 0.012	| 0.835 +/- 0.006	| 0.797 +/- 0.007	| 0.952 +/- 0.002 |
 |**XGB**	| **0.865 +/- 0.004**	| **0.955 +/- 0.008**	| **0.74 +/- 0.01**	| **0.834 +/- 0.004**	| **0.795 +/- 0.005**	| **0.952 +/- 0.003** |
 
-After deciding the best modeling technique, 80% of the data was separated to train the final model which was deployed. The evaluation was done using the remained 20% of the data, the model showed metrics very similar to the results obtained in the cross-validation **(Table 3, Table 4)**. Lastly, as shown in the confusion matrix **(Figure 7)**, for a set of 5727 samples, it was obtained 331 false negatives and 39 false positives.
+After deciding the best modeling technique, 80% of the data was separated to train the final model which was deployed. The evaluation was done using the remained 20% of the data, the model showed metrics very similar to the results obtained in the cross-validation **(Table 3, Table 4)**. Lastly, as shown in the confusion matrix **(Figure 7)**, for a set of 5727 samples, it was obtained 334 false negatives and 27 false positives.
 
 **Table 4.** Results regarding the evaluation metrics for the model selected to be deployed
 | Model | Balanced Accuracy	| Precision	| Recall	| F1	| Kappa | AUC |
 |:---------:	| :---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-|**XGB**	| 0.865	| 0.96	| 0.74 |0.836 | 0.797	| 0.95 |
+|**XGB**	| 0.866	| 0.972	| 0.738 |0.839 | 0.801	| 0.947 |
 
-![image](https://github.com/felipebita/credit_risk/assets/44379044/706e75d5-bca8-4889-b909-b7704de8134f)
+![image](https://github.com/felipebita/credit_risk/assets/44379044/094ddd7d-b4e2-4178-ba60-7c14c47d12c2)
+
 
 **Figure 7.** Confusion matrix of the model selected to be deployed.
 
 ## **5 - Company Credit Strategy**
+
 |Acceptance Rate	| Threshold	|Bad Rate	|Loans Accepted	|Average Loan Amount	|Portifolio Value |
 |:---------: |:---------:	|:---------:	|:---------:	|:---------:	|:---------: |
-|	1.00	|1.00 |	0.21634	| 5727 |	9704 |	31528296|
-|	0.95	|0.99736 |	0.17500 |	5440	| 9704	| 34313344|
-|	0.90	|0.99012 |  0.12922	| 5154	| 9704	| 37088688|
-|	0.85	|0.86606 |	0.07868	| 4868	| 9704	| 39805808|
-|	0.80	|0.30247 |	0.05479	| 4581	| 9704	| 39582616|
-|	0.75	|0.18514 |	0.04284	| 4295	| 9704	| 38107608|
-|	0.70	|0.13062 |	0.03642	| 4009	| 9704	| 36069768|
-|	0.65	|0.09661 |	0.02875	| 3722	| 9704	| 34041632|
+|1.00|	0.99999|	0.223|	5727|	$9474|	$30079950|
+|0.95|	0.99720|	0.182|	5440|	$9474|	$32798988|
+|0.90|	0.99032|	0.136|	5154|	$9474|	$35508552|
+|0.85|	0.91868|	0.086|	4868|	$9474|	$38218116|
+|0.80|	0.29733|	0.060|	4581|	$9474|	$38170746|
+|0.75|	0.18912|	0.048|	4295|	$9474|	$36787542|
+|0.70|	0.13159|	0.042|	4009|	$9474|	$34816950|
+|0.65|	0.09918|	0.034|	3722|	$9474|	$32836884|
+|0.60|	0.07434|	0.029|	3436|	$9474|	$30657864|
 
 ## **6 - Conclusions and Prospects**
