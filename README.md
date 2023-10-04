@@ -109,7 +109,7 @@ After deciding the best modeling technique, 80% of the data was separated to tra
 
 ## **5 - Company Credit Strategy**
 
-|Acceptance Rate	| Threshold	|Bad Rate	|Loans Accepted	|Average Loan Amount	|Portifolio Value |
+|Acceptance Rate	| Threshold	|Bad Rate	|Loans Accepted	|Average Loan Amount	|Portfolio Value |
 |:---------: |:---------:	|:---------:	|:---------:	|:---------:	|:---------: |
 |1.00|	0.99999|	0.223|	5727|	$9474|	$30079950|
 |0.95|	0.99720|	0.182|	5440|	$9474|	$32798988|
