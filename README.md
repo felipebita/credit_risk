@@ -18,7 +18,7 @@ For this project, five ML models for classification: Logistic Regression (LR), R
   
 **2.3 - Company Business Strategy**
 
-After selecting the best model, a business strategy was developed considering different acceptance rates of credit, where portfolio value was estimated and expected loss minimized.
+After selecting the best model, a business strategy was developed considering different acceptance rates of loans, where portfolio value was maximized and expected loss estimated.
   
 **2.4 - Model Deploy**
 
@@ -109,16 +109,19 @@ After deciding the best modeling technique, 80% of the data was separated to tra
 
 ## **5 - Company Credit Strategy**
 
-|Acceptance Rate	| Threshold	|Bad Rate	|Loans Accepted	|Average Loan Amount	|Portfolio Value |
+Considering the final model, it was evaluated which acceptance rate should be used in order to maximize the portfolio value. In this case, an acceptance rate of 0.85, i.e., the 15% loans with highest credit risk would not be accepted, for a set of 5727 samples, would produce a result of **4868 granted loans**, with a **bad rate of 8.6%** (false negatives in the accepted loans) and a portfolio values of **$38.218.116** **(Table 5)**, which was calculated as the product of accepted loans and average loan amount. Following this acceptance rate, the total expected loss, calculated as the sum of the product of loan probability of default, loan amount and loss given default (100% loss was considered), would be **$3,399,892**.
+
+**Table 5.** Strategy table showing the variation in accepted loans, bad rate and portfolio value as the acceptance rate changes.
+|Acceptance Rate	| Threshold	|Bad Rate	| Accepted Loans	|Average Loan Amount	|Portfolio Value |
 |:---------: |:---------:	|:---------:	|:---------:	|:---------:	|:---------: |
-|1.00|	0.99999|	0.223|	5727|	$9474|	$30079950|
-|0.95|	0.99720|	0.182|	5440|	$9474|	$32798988|
-|0.90|	0.99032|	0.136|	5154|	$9474|	$35508552|
-|0.85|	0.91868|	0.086|	4868|	$9474|	$38218116|
-|0.80|	0.29733|	0.060|	4581|	$9474|	$38170746|
-|0.75|	0.18912|	0.048|	4295|	$9474|	$36787542|
-|0.70|	0.13159|	0.042|	4009|	$9474|	$34816950|
-|0.65|	0.09918|	0.034|	3722|	$9474|	$32836884|
-|0.60|	0.07434|	0.029|	3436|	$9474|	$30657864|
+|1.00|	0.99999|	0.223|	5727|	$9,474|	$30,079,950|
+|0.95|	0.99720|	0.182|	5440|	$9,474|	$32,798,988|
+|0.90|	0.99032|	0.136|	5154|	$9,474|	$35,508,552|
+|**0.85**|	**0.91868**|	**0.086**|	**4868**|	**$9,474**|	**$38,218,116**|
+|0.80|	0.29733|	0.060|	4581|	$9,474|	$38,170,746|
+|0.75|	0.18912|	0.048|	4295|	$9,474|	$36,787,542|
+|0.70|	0.13159|	0.042|	4009|	$9,474|	$34,816,950|
+|0.65|	0.09918|	0.034|	3722|	$9,474|	$32,836,884|
+|0.60|	0.07434|	0.029|	3436|	$9,474|	$30,657,864|
 
 ## **6 - Conclusions and Prospects**
