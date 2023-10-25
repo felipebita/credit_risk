@@ -1,5 +1,5 @@
 # **Credit Risk Analysis**
-Under construction. Not finished.
+
 ## **1 - Introduction**
 This is a data science portfolio project focused on credit risk analysis. The objective is to emphasize the critical importance of credit risk analysis in the financial industry and showcase my skills in data analysis and machine learning by developing a model that predicts credit risk for financial institutions.
 
@@ -125,3 +125,5 @@ Considering the final model, it was evaluated which acceptance rate should be us
 |0.60|	0.07434|	0.029|	3436|	$9,474|	$30,657,864|
 
 ## **6 - Conclusions and Prospects**
+
+The final model obtained in this project had a good performance, by changing the acceptance rate it was possible to maximize the portfolio value and minimize defaults loses. The prospects for the project would be try to enhance the model perfomance by increasing the training dataset, evaluating different hyperparamete configurations and testing other models such as neural networks.
